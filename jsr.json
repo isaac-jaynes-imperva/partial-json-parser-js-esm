@@ -3,15 +3,15 @@
   "version": "0.1.7",
   "exports": {
     ".": {
-      "import": "./src/index.ts",
-      "require": "./src/index.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     },
     "./options": {
-      "import": "./src/options.ts",
-      "require": "./src/options.cjs"
+      "import": "./dist/options.js",
+      "require": "./dist/options.cjs"
     }
   },
   "publish": {
-    "include": ["src", "README.md", "LICENSE", "jsr.json"]
+    "include": ["dist", "README.md", "LICENSE", "jsr.json"]
   }
 }

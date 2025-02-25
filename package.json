@@ -14,19 +14,19 @@
   "author": "Muspi Merol <me@promplate.dev>",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
     },
     "./options": {
-      "types": "./dist/options.d.ts",
-      "default": "./dist/options.js"
+      "types": "./build/options.d.ts",
+      "default": "./build/options.js"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./build/index.js",
+  "module": "./build/index.js",
+  "types": "build/index.d.ts",
   "files": [
-    "dist"
+    "build"
   ],
   "scripts": {
     "build": "tsc",

@@ -3,13 +3,41 @@
     "incremental": true,
     "composite": true,
     "declaration": true,
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "es2021",
+    "module": "es2020",
+    "lib": ["ES2021", "DOM", "DOM.Iterable"],
     "declarationMap": true,
-    "outDir": "dist",
-    "rootDir": "src",
+    "sourceMap": true,
+    "inlineSources": true,
+    "outDir": "./build",
+    "rootDir": "./src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true
-  }
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "noImplicitOverride": true,
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true
+      }
+    ],
+    "types": ["mocha", "jest"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/api/**/*.ts",
+    "docs-src/**/*.ts"
+  ],
+  "exclude": []
 }
