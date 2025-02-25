@@ -2,8 +2,14 @@
   "name": "@promplate/partial-json",
   "version": "0.1.7",
   "exports": {
-    ".": "./src/index.ts",
-    "./options": "./src/options.ts"
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.cjs"
+    },
+    "./options": {
+      "import": "./src/options.ts",
+      "require": "./src/options.cjs"
+    }
   },
   "publish": {
     "include": ["src", "README.md", "LICENSE", "jsr.json"]

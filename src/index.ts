@@ -1,5 +1,5 @@
-import { Allow } from "./options";
-export * from "./options";
+import { Allow } from "./options.js";
+export * from "./options.js";
 
 class PartialJSON extends Error {}
 

@@ -1,5 +1,5 @@
-import { parse, PartialJSON, MalformedJSON } from "../src/index";
-import { STR, NUM, ARR, OBJ, NULL, BOOL, NAN, INFINITY, _INFINITY } from "../src/options";
+import { parse, PartialJSON, MalformedJSON } from "../src/index.js";
+import { STR, NUM, ARR, OBJ, NULL, BOOL, NAN, INFINITY, _INFINITY } from "../src/options.js";
 import { test, expect } from "vitest";
 
 test("str", () => {

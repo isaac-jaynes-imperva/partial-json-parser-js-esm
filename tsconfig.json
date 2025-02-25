@@ -4,7 +4,7 @@
     "composite": true,
     "declaration": true,
     "target": "ESNext",
-    "module": "commonjs",
+    "module": "ESNext",
     "declarationMap": true,
     "outDir": "dist",
     "rootDir": "src",
